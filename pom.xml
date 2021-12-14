@@ -40,6 +40,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
           <configuration>
+            <!-- 下面的配置是使用open jdk，如果环境为oracle jdk则会报错 -->
             <parameters>true</parameters>
             <release>13</release>
           </configuration>
@@ -53,7 +54,7 @@
       <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>1.18.12</version>
+        <version>1.18.22</version>
       </dependency>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
